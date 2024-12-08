@@ -2,100 +2,157 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <>
+      {/* Hero Section */}
+      <div className="bg-[#FBEBB5] w-full h-[100vh] mt-3">
+        <div className="mx-auto 2xl:w-[1500px] flex items-center justify-center">
+          <div>
+            <h1 className="text-[64px] font-poppins">Rocket single</h1>
+            <h1 className="text-[64px] font-poppins">Seater</h1>
+            <h1 className=" text-[16px] underline">
+                Shop now
+            </h1>
+          </div>
+          {/* Image */}
+          <div className="w-[600px] h-[600px]">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/assets/Rocket single seater 1.png"
+              alt="Rocket single seater"
+              width={600}
+              height={600}
+              className="object-cover"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </div>
+
+      {/* 2nd Section */}
+      <div className="w-full h-auto bg-[#FAF4F4] ">
+        <div className="mx-auto flex items-center justify-center 2xl:w-[1500px]">
+          <div className = " flex flex-col">
+            <div>
+            <h1 className="font-poppins font-bold text-[20px]">Side table</h1>
+            <h1 className=" text-[16px] underline">
+                Shop now
+            </h1>
+            </div>
+            <div>
+            <Image
+              src="/assets/Granite square side table 1.png"
+              alt="Granite square side table"
+              width={500}
+              height={500}
+            />
+            </div>
+          </div>
+          <div className = " flex flex-col" >
+            <div>
+          <h1 className="font-poppins font-bold text-[20px]">Cloud Sofa</h1>
+          <h1 className=" text-[16px] underline">
+                Shop now
+            </h1>
+            </div>
+            <div>
+            <Image
+              src="/assets/Cloud sofa three seater + ottoman_3 1.png"
+              alt="Cloud sofa three seater"
+              width={500}
+              height={500}
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 3rd Section */}
+      <div className=" w-full h-auto px-5 py-5">
+        <div className="mx-auto items-center 2xl:w-[1500px]">
+          <h1 className="text-[36px] font-poppins text-center">Top Picks For You</h1>
+          <p className="text-[16px] font-poppins text-center">
+            Find a bright ideal to suit your taste with our great selection of
+            suspension, floor table and lights
+          </p>
+          <div className = "flex items-center justify-between">
+          <div className = "items-center">
+            <Image
+              className="w-[240px] h-[174px]"
+              src="/assets/Trenton modular sofa_3 1.png"
+              alt="Trenton modular sofa"
+              width={240}
+              height={174}
+            />
+            <p className="font-poppins text-[16px]">Trenton modular sofa_3</p>
+            <p className="text-[18px]">Rs.25000.00</p>
+          </div>
+          <div>
+            <Image
+              className="w-[255px] h-[185px]"
+              src="/assets/Granite dining table with dining chair 1.png"
+              alt="Granite dining table"
+              width={255}
+              height={185}
+            />
+            <p className="font-poppins text-[16px]">
+              Granite dining table with dining chair
+            </p>
+            <p className="text-[18px]">Rs.25000.00</p>
+          </div>
+          <div>
+            <Image
+              className="w-[250px] h-[185px]"
+              src="/assets/Outdoor bar table and stool 1.png"
+              alt="Outdoor bar table and stool"
+              width={250}
+              height={185}
+            />
+            <p className="font-poppins text-[16px]">
+              Outdoor bar table and stool
+            </p>
+            <p className="text-[18px]">Rs.25000.00</p>
+          </div>
+          <div>
+            <Image
+              className="w-[240px] h-[174px]"
+              src="/assets/Plain console with teak mirror 1.png"
+              alt="Plain console with teak mirror"
+              width={240}
+              height={174}
+            />
+            <p className="font-poppins text-[16px]">
+              Plain console with teak mirror
+            </p>
+            <p className="text-[18px]">Rs.25000.00</p>
+          </div>
+          </div>
+          <h1>
+            <a href="#" className="font-poppins text-[16px] text-underline text-center font-bold">
+              Shop now
+            </a>
+          </h1>
+        </div>
+      </div>
+
+      {/* New Section */}
+      <div className="w-full h-[1200px] bg-[#FFF9E5]">
+        <div className="mx-auto flex items-center justify-center" >
+          <div>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            className="w-[983px] h-[799px]"
+            src="/assets/Asgaard sofa 1.png"
+            alt="Asgaard sofa"
+            width={983}
+            height={799}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          </div>
+          <div>
+          <h1 className="font-bold text-[48px]">New Arrivals</h1>
+          <h1 className="font-bold text-[48px]">Asgaard sofa</h1>
+          <button className="text-[16px] w-[106px] h-[30px] bg-[#FFF9E5] text-white border-1 border-black">
+            Order Now
+          </button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
